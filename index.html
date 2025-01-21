@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">>
+    <title>portfolio website</title>
+    <style>
+        /* navigation bar css */
+        .menu-item {
+            text-decoration: none;
+            color: rgb(0, 174, 255);
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 2px;
+            transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            color: white;
+
+            transform: scale(1.1);
+        }
+
+        .menu-item.active {
+            color: white;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .body-container {
+            font-family: cursive;
+        }
+
+        .home {
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            padding: 0 10%;
+            
+        }
+
+        .home-container {
+
+            max-width: 600px;
+        }
+
+        .home-container h1 {
+            font-size: 56px;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .home-container h3 {
+            font-size: 35px;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(0, 174, 255);
+        }
+
+        .home-container p {
+            font-size: 20px;
+        }
+
+        /* button css */
+        .home-container .btn-box {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(0, 174, 255);
+        }
+
+        .btn-box {
+            display: inline-flex;
+            width: 150px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            background-color: aqua;
+            border-radius: 8px;
+            font-size: 19px;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* footer icon css */
+        .social-icon {
+            transition: transform 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-icon:hover {
+            color: #0d6efd;
+            transform: scale(1.2);
+
+        }
+        .home-img .img-box{
+            position: relative;
+            width: 12vm;
+            height: 12vm;
+            border: 2px solid rgb(0, 174, 255);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgb(0, 174, 255);
+            overflow: hidden;
+        }
+        .about-txt{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            align-items: center;
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="body-container">
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <h3><span class="anku">ANKITAKHOLE</span></h3>
+            </div>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 menu-item active">HOME</a></li>
+                <li><a href="#" class="nav-link px-2 menu-item">ABOUT</a></li>
+                <li><a href="resume.html" class="nav-link px-2 menu-item">RESUME</a></li>
+                <li><a href="#" class="nav-link px-2 menu-item">SKILLS</a></li>
+                <li><a href="#" class="nav-link px-2 menu-item">CONTACT</a></li>
+            </ul>
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+            </div>
+        </header>
+        <section class="home">
+            <div class="home-container">
+                <h1>Hello, It's me Ankita</h1>
+
+                <h3>Ans I'm Frontend Devloper</h3>
+                <p>I have created creative website or application.
+                    I love to be passionated my work.
+                    I have completed my bachlor degree for computer sicence ,
+                    and master degree MCA from Godavari College Jalgaon city.
+                </p>
+                <div class="btn-box">
+                    <a href="#">Here Me</a>
+                </div>
+            </div>
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="ankita3.png" height="300px" width="300px" alt="ankita photo">
+                </div>
+            </div>
+        </section>
+    </div>
+ 
+    <!-- <div class="about-txt">
+        <h2>About<span>Me</span></h2>
+        <h4>Frontend Devloper</h4>
+        <p>I am a Frontend Devloper to create a live excelent website.I have completed my education 
+            for Computer Science from KBCNMU Jalgaon.I have  stron Skills like Comunication, Team-Work,
+            Time-Manegemant..And my soft skills are HTML,CSS,JavaScript,Bootstrap and Python.
+            I have completed one project on my bachlores degree "Skincare Product Recommmendation Website" using
+            html,css,js,php.Then i have complete second project in my master degree "Personal Portfolio"using 
+            html,css,js,bootstrap..
+        </p>
+        <div class="btn-box2">
+            <a href="#">More About Me</a>
+        </div>
+    </div>
+     -->
+    <!-- footer part -->
+    <div class="container">
+        <footer class="py-3 my-4">
+
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <i class="fa-brands fa-linkedin fa-xl mx-2 social-icon" style="color: #74C0FC;"></i>
+                <i class="fa-brands fa-github fa-xl mx-2 social-icon" style="color: #74C0FC;"></i>
+                <i class="fa-brands fa-twitter fa-xl mx-2 social-icon" style="color: #74C0FC;"></i>
+                <i class="fa-brands fa-facebook fa-xl mx-2 social-icon" style="color: #74C0FC;"></i>
+            </ul>
+            <p class="text-center text-muted">© Ankita portfolio</p>
+        </footer>
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
